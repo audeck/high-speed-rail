@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "me.audeck.mixin.client",
+	"package": "me.audeck.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
+	"mixins": [
+		"AbstractMinecartEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

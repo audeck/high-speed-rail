@@ -1,31 +1,30 @@
 {
 	"schemaVersion": 1,
-	"id": "high-speed-rail-tracks",
+	"id": "highspeedrail",
 	"version": "${version}",
-	"name": "High speed rail tracks",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "High Speed Rail",
+	"description": "A mod that adds late game high speed rail tracks into the game.",
 	"authors": [
-		"Me!"
+		"audeck"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/high-speed-rail-tracks/icon.png",
+	"icon": "assets/highspeedrail/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"me.audeck.HighSpeedRailTracks"
+			"me.audeck.Main"
 		],
 		"client": [
-			"me.audeck.HighSpeedRailTracksClient"
+			"me.audeck.HighSpeedRailClient"
 		]
 	},
 	"mixins": [
-		"high-speed-rail-tracks.mixins.json",
+		"high-speed-rail.mixins.json",
 		{
-			"config": "high-speed-rail-tracks.client.mixins.json",
+			"config": "high-speed-rail.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -34,8 +33,5 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
